@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="pass.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Oswald&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <h1>Password Generator</h1>
+ 
+    <div class="container">
+      <input
+        type="number"
+        class="length"
+        id="length"
+        min="6"
+        placeholder="Length"
+      />
+      <br /><br />
+      <div class="types">
+        <div class="special">
+          <input type="checkbox" id="special" name="special" />
+          <label for="special">Special Characters</label>
+        </div>
+        <br />
+       
+        <div class="num">
+          <input type="checkbox" id="numbers" name="num" />
+          <label for="num" onclick="check()">Numbers</label>
+        </div>
+        <br />
+      </div>
+      <button id="submit" onclick="f1()">Generate</button>
+      <h3 id="r"></h3>
+      <p id="rp"></p>
+      <button id="result-btn" onclick="copy()">Copy to clipboard</button>
+    </div>
+    <script src="pass.js"></script>
+  </body>
+</html>
