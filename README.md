@@ -31,7 +31,8 @@ git clone https://github.com/pro-yash-jects/Pass-gen.git
 cd Pass-gen
 ```
 
-Then open `index.html` in your browser.
+Then open `index.html` in your browser or  just open https://pro-yash-jects.github.io/Pass-gen/ 
+
 
 ## Files Structure
 
